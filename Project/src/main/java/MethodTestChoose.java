@@ -10,6 +10,7 @@ import static com.ibm.wala.types.ClassLoaderReference.Application;
 
 /**
  * 方法级的测试用例选择
+ *
  * @author great_fish
  */
 public class MethodTestChoose implements TestChoose {

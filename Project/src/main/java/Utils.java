@@ -51,6 +51,7 @@ public class Utils {
 
     /**
      * 获得指定路径下所有.class文件
+     *
      * @param path     target文件夹路径
      * @param fileList .class文件数组
      * @return 返回目录下所有./class文件
@@ -133,5 +134,18 @@ public class Utils {
             e.printStackTrace();
         }
         return lines;
+    }
+
+    /**
+     * 检查给定路径名表示的文件或目录是否存在
+     *
+     * @param filePath 路径名
+     * @return 路径下是否存在文件/目录
+     */
+    public static boolean checkFileExit(String filePath) {
+        File file = new File(filePath);
+        if (!file.exists())
+            return false;
+        return true;
     }
 }

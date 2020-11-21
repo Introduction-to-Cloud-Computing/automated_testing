@@ -5,6 +5,7 @@ import java.util.*;
 
 /**
  * 类级依赖图
+ *
  * @author great_fish
  */
 public class ClassDependencyGraph extends DependencyGraph {
@@ -45,6 +46,9 @@ public class ClassDependencyGraph extends DependencyGraph {
 
     /**
      * 根据类名返回类中所有的方法名
+     *
+     * @param className 类名
+     * @return 类中的所有方法签名
      */
     public Set<String> getMethosOfClass(String className) {
         return classToMethods.get(className);

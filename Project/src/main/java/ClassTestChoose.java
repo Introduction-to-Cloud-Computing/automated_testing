@@ -9,6 +9,7 @@ import java.util.Set;
 
 /**
  * 类级的测试用例选择
+ *
  * @author great_fish
  */
 public class ClassTestChoose implements TestChoose {
